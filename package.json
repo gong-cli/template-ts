@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "ts-node ./script/remove-catch.ts && parcel index.html",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "parcel": "^2.9.3"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",
+    "@parcel/config-default": "^2.9.3",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^18.14.1",
+    "consola": "^3.2.3",
     "eslint": "^8.23.0",
-    "parcel-reporter-static-files-copy": "^1.5.2"
+    "fs-extra": "^11.1.1",
+    "parcel": "^2.9.3",
+    "parcel-reporter-static-files-copy": "^1.5.2",
+    "ts-node": "^10.9.1"
   }
 }
